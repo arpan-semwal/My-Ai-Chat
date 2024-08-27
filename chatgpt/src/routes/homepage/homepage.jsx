@@ -14,9 +14,14 @@ const Homepage = () => {
 			</h3>
 			
 			<Link to="/dashboard">Get Started</Link>
-		 </div>
+		 </div>W
 		 <div className="right">
-			
+			<div className="imgContainer">
+				<div className="bgContainer">
+					<div className="bg"></div>
+				</div>
+				<img src="../../../public/bot.png" alt=""  className="bot"/>
+			</div>
 		 </div>
 		 </div>
 	)
