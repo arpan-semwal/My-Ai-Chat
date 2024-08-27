@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Homepage from "./routes/homepage/homepage"
-import { createRoot } from "react-dom/client";
+ 
 import RootLayout from './layouts/rootLayout/rootLayout';
 import './index.css'
 import {
@@ -13,6 +13,8 @@ import {
 import Dashboard from './routes/dashboard/dashboard';
 import ChatPage from './routes/chatPage/chatPage';
 import DashboardLayout from './layouts/dashboardLayout/dashboardLayout';
+import SigninPage from './routes/signinPage/signinPage';
+import SignupPage from './routes/signupPage/signupPage';
 
 
  
@@ -22,7 +24,18 @@ const router = createBrowserRouter([
     element:<RootLayout/>,
     children:[
       {
-        path:"/", element:<Homepage/>,
+        path:"/", 
+        element:<Homepage/>,
+        
+      },
+      {
+        path:"/sign-in/*", 
+        element:<SigninPage/>,
+        
+      },
+      {
+        path:"/sign-up/*", 
+        element:<SignupPage/>,
         
       },{
         element:<DashboardLayout/>,
